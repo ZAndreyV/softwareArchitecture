@@ -1,0 +1,44 @@
+@startuml
+class calculator.Main {
++ {static} void main(String[])
+}
+interface calculator.ICalculableFactory {
+~ Calculable create(Complex)
+}
+class calculator.Calculator {
+- Complex complex
++ void add(Complex)
++ void mul(Complex)
++ void sub(Complex)
++ void div(Complex)
++ Complex res()
+}
+class calculator.ViewCalculator {
+- Scanner scanner
+- ICalculableFactory iCalculableFactory
++ void start()
+- Complex getNumber()
+}
+interface calculator.Calculable {
+~ void add(Complex)
+~ void mul(Complex)
+~ void sub(Complex)
+~ void div(Complex)
+~ Complex res()
+}
+class calculator.CalculableFactory {
++ Calculable create(Complex)
+}
+class calculator.Complex {
+- int real
+- int image
++ int getImage()
++ int getReal()
++ void setImage(int)
++ void setReal(int)
++ String toString()
+}
+
+
+calculator.Calculable <|.. calculator.Calculator
+calculator.ICalculableFactory <|.. calculator.CalculableFactory
