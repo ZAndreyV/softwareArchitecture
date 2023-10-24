@@ -1,0 +1,1 @@
+Разработать экранные формы интерфейса [Ссылка на Figma](https://www.figma.com/file/cLBQ4gO3G7x9gDFFZlkXEI/Pages?type=whiteboard&node-id=0%3A1&t=Cyqm091JDIsmMLUi-1)
